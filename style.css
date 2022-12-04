@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.site-width {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 8.5vw;
+}
+
+h2 {
+  font-size: 28px;
+  max-width: 700px;
+}
+
+img {
+  object-fit: cover;
+  width: 90%;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.icons {
+  width: 100%;
+}
+
+.button {
+  color: white;
+  background-color: lightgreen;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 22px;
+  margin-bottom: 5px;
+}
+
+.info-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+div.container {
+  position: relative;
+}
+
+div.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+div.header-container {
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+div.header-first-section p {
+  margin-left: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+div.header-second-section ul {
+  width: 300px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+div.first-section {
+  flex-direction: column;
+  background-image: url("Images/scenery1.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+div.first-section p.col {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+  width: 75%;
+  max-width: 650px;
+}
+
+div.second-section {
+  color: white;
+  background-color: lightgreen;
+  padding: 20px 0;
+  text-align: center;
+}
+
+div.second-section p.col {
+  font-size: 20px;
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+div.third-section {
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+div.text-container {
+  width: 50%;
+}
+
+div.img-container {
+  width: 50%;
+  text-align: right;
+}
+
+div.third-section div.text-container {
+  order: 2;
+  width: 50%;
+}
+
+div.third-section div.img-container {
+  order: 1;
+  width: 50%;
+  text-align: left;
+}
+
+div.fourth-section {
+  padding: 20px 0;
+  color: white;
+  background-color: black;
+}
+
+div.fourth-section button {
+  color: black;
+  background-color: white;
+}
+
+div.fifth-section {
+  flex-direction: column;
+}
+
+
+div.fifth-section div.bg-img {
+  flex-grow: 1;
+  color: white; 
+  font-size: 40px;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+}
+
+div.fifth-section div.bg-img:nth-of-type(1) {
+  background-image: url("Images/scenery1.jpg");
+}
+
+div.fifth-section div.bg-img:nth-of-type(2) {
+  background-image: url("Images/scenery2.jpg");
+}
+
+div.fifth-section div.bg-img:nth-of-type(3) {
+  background-image: url("Images/scenery3.jpg");
+}
+
+div.fifth-section div.fifth-section-text {
+  text-align: center;
+  padding: 20px 0;
+}
+
+div.fifth-section div.fifth-section-text p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+div.sixth-section {
+  color: white;
+  background-color: lightgreen;
+  font-size: 20px;
+  padding: 30px 0;
+  text-align: center;
+  flex-direction: column;
+}
+
+div.sixth-section > div {
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  padding: 30px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  div.first-section p.col {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 15px;
+    padding: 7px 17px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  div.second-section p.col {
+    font-size: 16px;
+  }
+  div.text-container {
+    text-align: center;
+    width: 100%;
+  }
+  div.img-container {
+    width: 100%;
+  }
+  div.third-section div.text-container {
+    order: 1;
+    width: 100%;
+  }
+  div.third-section div.img-container {
+    width: 100%;
+    order: 2;
+  }
+  img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .info-text {
+    font-size: 15px;
+  }
+  div.bg-img {
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 102px;
+  }
+}
